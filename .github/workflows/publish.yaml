@@ -30,4 +30,6 @@ jobs:
           inputs: template.yaml
       - uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
         with:
-          files: template.yaml
+          files: |
+            template.yaml
+            template.yaml.sigstore.json
