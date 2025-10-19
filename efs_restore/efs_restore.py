@@ -115,7 +115,7 @@ class EfsRestore:
                 Metadata=cfn_nag.suppress(
                     [cfn_nag.rule(id="W84", reason="No sensitive data logged")]
                 ),
-                LogGroupName=Sub("/aws/lambda/${AWS::StackName}-efs-restore"),
+                LogGroupName=Sub("/${AWS::StackName}/efs-restore"),
                 RetentionInDays="3",
             )
         )
