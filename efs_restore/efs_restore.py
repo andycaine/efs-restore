@@ -174,4 +174,4 @@ class EfsRestore:
 
 if __name__ == "__main__":
     template = EfsRestore().create_template()
-    print(template.to_json())
+    print(template.to_yaml())
